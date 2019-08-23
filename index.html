@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task List</title>
+
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+
+     <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a2d4bd207f.js"></script>
+    </head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="card" style="width: 20rem;">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Task List</h5>
+                    <form action="" id="taskForm">
+                        <div class="form-group">
+                            <input id="newTask" type="text" class="form-control" placeholder="New task">
+                        </div>
+                        <button id="addTask" class="btn btn-primary float-right">Add task</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                        <h5 class="card-title">Tasks</h5>
+                        <input id="filterTask" type="text" class="form-control" placeholder="Filter task">
+                </div>
+
+                <ul id="taskLists" class="list-group list-group-flush"></ul>
+
+                <div class="card-body">
+                    <button id="clearTask" class="btn btn-primary float-right">Clear task</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
